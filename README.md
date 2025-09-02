@@ -1,15 +1,13 @@
-Got it 👍 Here’s the **README.md file content** in ready-to-save format:
 
----
 
-# 🌡️ Temperature Trend Dashboard
+#  Temperature Trend Dashboard
 
 A simple **real-time temperature dashboard** built with **Streamlit** and the **OpenWeather API**.
 It shows the **current temperature**, classifies it as *Hot*, *Cold*, or *Normal*, and visualizes the **temperature trend for the next 5 days (3-hour intervals)**.
 
 ---
 
-## 🚀 Features
+##  Features
 
 * Enter any city (format: `City,CountryCode`, e.g., `Delhi,IN` or `London,GB`).
 * Displays **current temperature** with an emoji indicator:
@@ -22,7 +20,7 @@ It shows the **current temperature**, classifies it as *Hot*, *Cold*, or *Normal
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * [Python 3](https://www.python.org/)
 * [Streamlit](https://streamlit.io/)
@@ -32,7 +30,7 @@ It shows the **current temperature**, classifies it as *Hot*, *Cold*, or *Normal
 
 ---
 
-## 📦 Installation
+##  Installation
 
 1. Clone the repository:
 
@@ -65,7 +63,7 @@ It shows the **current temperature**, classifies it as *Hot*, *Cold*, or *Normal
 
 ---
 
-## ▶️ Usage
+##  Usage
 
 Run the app with:
 
@@ -77,14 +75,14 @@ Open your browser at `http://localhost:8501` to use the dashboard.
 
 ---
 
-## 📸 Screenshot
+##  Screenshot
 
 ![Dashboard Screenshot](output.png)
 
 
 ---
 
-## ⚡ Example Inputs
+##  Example Inputs
 
 * `Delhi,IN`
 * `London,GB`
@@ -93,7 +91,7 @@ Open your browser at `http://localhost:8501` to use the dashboard.
 
 ---
 
-## 🙌 Acknowledgments
+##  Acknowledgments
 
 * [OpenWeather API](https://openweathermap.org/) for weather data.
 * [Streamlit](https://streamlit.io/) for the interactive dashboard.
