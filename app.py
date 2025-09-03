@@ -2,7 +2,6 @@ import requests
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import pycountry
 import geocoder
 
 API_KEY = st.secrets["API_KEY"] # you go to the openWeather api signin for free and use it for your dashboard
