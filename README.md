@@ -1,99 +1,129 @@
 
+#  Interactive Weather Dashboard
 
-#  Temperature Trend Dashboard
-
-A simple **real-time temperature dashboard** built with **Streamlit** and the **OpenWeather API**.
-It shows the **current temperature**, classifies it as *Hot*, *Cold*, or *Normal*, and visualizes the **temperature trend for the next 5 days (3-hour intervals)**.
+An **interactive weather forecasting dashboard** built with [Streamlit](https://streamlit.io/) and the [OpenWeather API](https://openweathermap.org/api).  
+This app allows users to view forecasts, compare two cities side by side, check alerts, and download forecast data.  
 
 ---
 
 ##  Features
 
-* Enter any city (format: `City,CountryCode`, e.g., `Delhi,IN` or `London,GB`).
-* Displays **current temperature** with an emoji indicator:
+- 📍 **Current Weather Conditions**
+  - Temperature, humidity, wind speed, rainfall, and cloudiness.
+  - Comfort index (temperature + humidity factor).
 
-  * 🥵 Too Hot (above 35°C)
-  * 🥶 Too Cold (below 10°C)
-  * ☺️ Normal
-* **Line chart** showing forecast trend over the next 5 days.
-* Uses **free OpenWeather API**.
+- 📊 **Forecast Trends**
+  - Interactive charts for temperature, humidity, wind speed, cloudiness, and rainfall.
 
----
+- 📝 **AI-like Summaries**
+  - Simple text-based forecast summaries.
 
-##  Tech Stack
+- ⚠️ **Weather Alerts**
+  - Heatwave, cold wave, and heavy rainfall warnings.
 
-* [Python 3](https://www.python.org/)
-* [Streamlit](https://streamlit.io/)
-* [Requests](https://docs.python-requests.org/en/master/)
-* [Pandas](https://pandas.pydata.org/)
-* [OpenWeather API](https://openweathermap.org/)
+- 🔄 **Comparison Mode**
+  - Compare two cities side by side with charts for **temperature** and **rainfall**.
 
----
+- 🕘 **Search History**
+  - Quick access to your 5 most recent searches.
 
-##  Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/temperature-dashboard.git
-   cd temperature-dashboard
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   **requirements.txt**
-
-   ```
-   streamlit
-   requests
-   pandas
-   ```
-
-3. Get a free API key from [OpenWeather](https://home.openweathermap.org/users/sign_up).
-
-4. Open `app.py` and replace the placeholder with your API key:
-
-   ```python
-   API_KEY = "your_api_key_here"
-   ```
+- 📥 **Download Data**
+  - Export forecast as CSV.
 
 ---
 
-##  Usage
+## 🚀 Installation
 
-Run the app with:
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/weather-dashboard.git
+cd weather-dashboard
+````
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 API Key Setup
+
+1. Sign up at [OpenWeather](https://home.openweathermap.org/users/sign_up) to get a **free API key**.
+2. In the code, replace:
+
+```python
+API_KEY = "your_api_key_here"
+```
+
+with your actual key.
+
+⚠️ **Tip**: When deploying publicly (e.g., on Streamlit Cloud), don’t hardcode your API key.
+Instead, store it as a **secret** in `.streamlit/secrets.toml`:
+
+```toml
+API_KEY = "your_api_key_here"
+```
+
+And access it in your code with:
+
+```python
+import streamlit as st
+API_KEY = st.secrets["API_KEY"]
+```
+
+---
+
+## ▶️ Run the App
 
 ```bash
 streamlit run app.py
 ```
 
-Open your browser at `http://localhost:8501` to use the dashboard.
+Open your browser at **[http://localhost:8501](http://localhost:8501)**.
 
 ---
 
-##  Screenshot
+## 📦 Deployment
 
-![Dashboard Screenshot](output.png)
+You can deploy this app for free on **[Streamlit Community Cloud](https://streamlit.io/cloud)**:
 
-
----
-
-##  Example Inputs
-
-* `Delhi,IN`
-* `London,GB`
-* `New York,US`
-* `Tokyo,JP`
+1. Push your code to GitHub.
+2. Go to Streamlit Cloud → New app.
+3. Connect your repo and branch.
+4. Add your **API key** in *Secrets Manager*.
+5. Deploy 🚀.
 
 ---
 
-##  Acknowledgments
+## 📸 Screenshots
 
-* [OpenWeather API](https://openweathermap.org/) for weather data.
-* [Streamlit](https://streamlit.io/) for the interactive dashboard.
+### Single City Dashboard
+
+* Current conditions, alerts, trends, and downloadable data.
+
+### City Comparison
+
+* Side-by-side comparison of two cities with trend charts.
+
+---
+
+## 🛠️ Tech Stack
+
+* [Streamlit](https://streamlit.io/) – interactive web UI
+* [Pandas](https://pandas.pydata.org/) – data manipulation
+* [Requests](https://docs.python-requests.org/) – API calls
+* [Geocoder](https://geocoder.readthedocs.io/) – location-based defaults
+* [OpenWeather API](https://openweathermap.org/api) – weather data source
+
+---
+
+## 📄 License
+
+This project is open-source and free to use under the **MIT License**.
+
+---
 
 
