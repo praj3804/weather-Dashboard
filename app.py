@@ -5,7 +5,7 @@ from datetime import datetime
 import pycountry
 import geocoder
 
-API_KEY = "ac5e7fdd599e092153162a8e2a459500" # you go to the openWeather api signin for free and use it for your dashboard
+API_KEY = st.secrets["API_KEY"] # you go to the openWeather api signin for free and use it for your dashboard
 
 
 # ---------- Helper Functions ----------
